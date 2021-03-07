@@ -1,0 +1,161 @@
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.btn-style {
+    background: #72c3dc;
+    border: 1px solid #72c3dc;
+    border-radius: 5px;
+    color: #FFFFFF;
+    height: 50px;
+    width: 80%;
+    margin: 10px;
+    box-shadow: 0px 5px 0px #2b8ead;
+}
+
+.grid-item-1,
+.grid-item-5,
+.grid-item-9 {
+    background: #2f454e;
+}
+
+.grid-item-2,
+.grid-item-6 {
+    background: #bfbfbf;
+
+}
+
+.grid-item-7,
+.grid-item-3 {
+    background: #6F98A8;
+
+}
+
+.grid-item-8,
+.grid-item-4 {
+    background: #2B8EAD;
+
+}
+
+/* .grid-container div:nth-child(2n) {
+    background: #333333;
+}
+
+.grid-container div:nth-child(2n+1) {
+    background: #BFBFBF;
+}
+
+.grid-container div:nth-child(3n+4) {
+    background: #6F98A8;
+} */
+
+.mainConatiner {
+    display: flex;
+    background: #efefef;
+    height: 80vh;
+
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+
+.footer {
+    background: #efefef;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    font-style: italic;
+}
+
+
+@media  screen and (min-device-width:375px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        height: 100%;
+        width: 100%;
+        background: #FFFFFF;
+
+    }
+    .mainConatiner {
+        flex-direction: column-reverse;
+    }
+
+    .btn-container {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+        background: #FFFFFF;
+        
+    }
+
+    .header {
+        background: #000000;
+        color: #FFFFFF;
+        font-size: 2rem;
+       }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        background: #efefef;
+        font-size: 2rem;
+        color: #000000;
+        margin: 5px;
+
+    }
+
+    .grid-item-1,
+    .grid-item-5,
+    .grid-item-9 {
+        border-left: 10px solid #2f454e;
+    }
+
+    .grid-item-2,
+    .grid-item-6 {
+        border-left: 10px solid #bfbfbf;
+
+    }
+
+    .grid-item-7,
+    .grid-item-3 {
+        border-left: 10px solid #6F98A8;
+
+    }
+
+    .grid-item-8,
+    .grid-item-4 {
+        border-left: 10px solid #2B8EAD;
+
+    }
+
+    .footer {
+        background: #FFFFFF;
+        font-size: 2rem;
+    }
+
+    
+}
